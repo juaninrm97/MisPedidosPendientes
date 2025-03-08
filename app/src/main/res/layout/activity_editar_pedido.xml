@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo para mostrar el nombre de la tienda -->
+
+    <!-- Campo para Descripción del Pedido -->
+    <TextView
+        android:id="@+id/txtDescripcionPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción del Pedido"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/edtDescripcionPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa la descripción del pedido"
+        android:inputType="text" />
+
+    <!-- Campo para Importe del Pedido -->
+    <TextView
+        android:id="@+id/txtImportePedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Importe del Pedido"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/edtImportePedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa el importe del pedido"
+        android:inputType="numberDecimal" />
+
+    <!-- Campo para Estado de Entregado -->
+    <CheckBox
+        android:id="@+id/chkEntregado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Entregado?"
+        android:layout_marginTop="16dp" />
+
+    <!-- Campo oculto para idTiendaFK (no visible pero usado internamente) -->
+    <EditText
+        android:id="@+id/edtIdTiendaFK"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:inputType="none"
+        android:text="" />
+
+    <!-- Botones de Guardar y Volver -->
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar cambios"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+</LinearLayout>

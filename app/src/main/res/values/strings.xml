@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MisPedidosPendientes</string>
+    <string name="nuevo_pedido">Nuevo Pedido</string>
+    <string name="nueva_tienda">Nueva Tienda</string>
+    <string name="descripcion_pedido">Descripción del Pedido</string>
+    <string name="importe_pedido">Importe del Pedido</string>
+    <string name="fecha_pedido">Fecha del Pedido</string>
+</resources>
